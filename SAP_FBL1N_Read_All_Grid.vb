@@ -1,3 +1,5 @@
+'precisa de um output collection com nome de Tabela
+'Em inicialize foi adicionado em namespace imports: System.Collections.Generic
 
 Dim session As Object
 Dim Application As Object
