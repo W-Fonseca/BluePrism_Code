@@ -1,0 +1,16 @@
+[
+  {
+    "PRD": {
+      "Path Template": "C:\\Local_Arquivo",
+      "FileName Template": "Arquivo.xlsx",
+      "SAP Credential": "RPA_SAP_001",
+      "PathFolder Process": "\\\\snanvr01apcp070\\RPA\\Projeto_001"
+    },
+    "HMG": {
+      "Path Template": "C:\\Local_Arquivo_HMG",
+      "FileName Template": "Arquivo_HMG.xlsx",
+      "SAP Credential": "RPA_SAP_001_HMG",
+      "PathFolder Process": "\\\\snanvr01apcp070\\RPA\\Projeto_HMG"
+    }
+  }
+]
