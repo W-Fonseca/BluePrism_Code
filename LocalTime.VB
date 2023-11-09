@@ -1,0 +1,1 @@
+Now()+(LocalTime()-UTCTime())
