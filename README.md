@@ -3,3 +3,11 @@ Manual SAP GUI ### para scripting api https://help.sap.com/doc/9215986e541741748
 Como baixar arquivo Fácil:
 
 ex.: wget -O - https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+
+arrumar sap
+
+SAP precisa ser aberto 1 vez para existir a pasta Common
+1. Abrir Windows Explorer, e no campo de pesquisa superior digitar %appdata%
+2. No local que será aberto, navegar nos diretórios SAP > Common
+3. Editar o arquivo SAPUILandscape.xml pelo Notepad, incluindo o
+seguinte trecho antes da tag <Includes>:
