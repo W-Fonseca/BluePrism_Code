@@ -13,3 +13,6 @@ SAP precisa ser aberto 1 vez para existir a pasta Common
 seguinte trecho antes da tag <Includes>:
 
 Data e hora atual BP: Now()+ LocalTime() - UTCTime()
+
+ajuste teams Win+R e: %userprofile%\appdata\local\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams
+deletar tudo.
