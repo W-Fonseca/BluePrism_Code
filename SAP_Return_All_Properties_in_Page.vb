@@ -42,6 +42,9 @@ Next
 '=======================================================
 Sub AdicionarSapObjectNaTabela(SapObject As Object, Table As DataTable)
 on error resume next
+Dim validador = ""
+validador = SapObject.ContainerType
+if validador > ""
 Table.Rows.Add(
 SapObject.ContainerType,	
 SapObject.Id,	
@@ -67,11 +70,15 @@ SapObject.Text,
 SapObject.Tooltip,	
 SapObject.Top,	
 SapObject.Width)
-
-    If SapObject.ContainerType = True Then
+end if
+On Error GoTo 0
+On Error GoTo SAIDA2
+    'If SapObject.ContainerType = True Then
+If SapObject.Children.Count > 0 Then
         For Each SapOb As Object In SapObject.Children
-            AdicionarSapObjectNaTabela(SapOb, Table)
+         Call AdicionarSapObjectNaTabela(SapOb, Table)
         Next
     End If
+SAIDA2:
 End Sub
 
