@@ -14,5 +14,7 @@ seguinte trecho antes da tag <Includes>:
 
 Data e hora atual BP: Now()+ LocalTime() - UTCTime()
 
+Blue prism manipular collection por VB Coll.Rows(0)("Partidas_normais")
+
 ajuste teams Win+R e: %userprofile%\appdata\local\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams
 deletar tudo.
