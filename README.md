@@ -18,3 +18,5 @@ Blue prism manipular collection por VB Coll.Rows(0)("Partidas_normais")
 
 ajuste teams Win+R e: %userprofile%\appdata\local\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams
 deletar tudo.
+
+1824651516
