@@ -20,3 +20,5 @@ ajuste teams Win+R e: %userprofile%\appdata\local\Packages\MSTeams_8wekyb3d8bbwe
 deletar tudo.
 
 1824651516
+
+Encontrar mais de um nome mapeando no Aplication Moduler Export|Exportar - tem que ser regex
