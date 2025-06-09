@@ -9,7 +9,10 @@ REGEXSEARCH(Fornecedor,"\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}")
 ou IF(EQ(STRLEN(REGEXREPLACE(Fornecedor, "\D+", "")),14),REGEXREPLACE(REGEXREPLACE(Fornecedor, "\D+", ""), "(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})", "$1.$2.$3/$4-$5"),"")
 REGEXREPLACE(REGEXSEARCH(DATA,"\d{2}[./]\d{2}[./]\d{4}"),"\.","/")
 REGEXSEARCH(Chave, "^\d{4}(?: \d{4}){10}$")
-REGEXSEARCH(REGEXREPLACE(ValorTotal, "[^0-9.,-]", ""),"^-?\\d{1,3}(\\.\\d{3})*,\\d{2}$") 
+======================================================================= valor total======================
+REGEXSEARCH(REGEXREPLACE(ValorTotal, "[^0-9.,-]", ""),"^-?\\d{1,3}(\\.\\d{3})*,\\d{2}$")
+REGEXSEARCH(ValorTotal,"[\d.,]+$")
+======================================================================= valor total======================
 REGEXREPLACE(REGEXSEARCH(Emissao,"\d{2}[./]\d{2}[./]\d{4}"),"\.","/")
 
 
