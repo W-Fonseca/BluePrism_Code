@@ -1,0 +1,1096 @@
+﻿<process name="Utility - SharePoint API" version="1.0" bpversion="7.3.0.9110" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" type="object" runmode="Exclusive" preferredid="f8aaf401-2f3d-4fc9-b5c4-845df3d9b02f">
+  <appdef>
+    <element name="Application Root">
+      <id>2fc12cb6-8f09-4ddb-bfb1-6572263aa97e</id>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="9e68876a-980b-4abb-8aef-d3211b52d59e" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="5672ac7a-ea1f-4dae-b72a-72cbe3690075" type="Normal" published="True">
+    <name>Set Credentials</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="fb626da8-af9c-4552-9f28-3b8168f621b6" type="Normal" published="True">
+    <name>Upload File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="bae8facc-f748-4799-847e-95c362b94dc9" type="Normal" published="True">
+    <name>Upload All Files in Folder</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="fec465f9-dcfb-4370-9d0e-79f0f4e971ee" type="Normal" published="True">
+    <name>Check File Exists</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="24bb38d5-f194-49d9-9fee-354af39081fc" type="Normal" published="True">
+    <name>Ensure Folder Structure Exists</name>
+    <view>
+      <camerax>-195</camerax>
+      <cameray>45</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="c951b7a4-f215-41a1-a7a6-abb6551a0c31" type="Normal" published="True">
+    <name>Delete File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="58e21268-7a6d-4f30-b16f-3a062102b28e" type="Normal" published="True">
+    <name>Download List Items As CSV File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>123</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="2007d99b-036a-4fb0-9ea4-1cedded83f0f" type="Normal" published="True">
+    <name>Download File by Name</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="3370a323-48a3-4a37-a1f2-3e1131b73103" type="Normal" published="True">
+    <name>Create List Item With Attachments</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="b2e8e0d3-5910-48b6-b21d-7ef5a34b9b95" type="Normal" published="True">
+    <name>CheckOut Document</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">2.1875</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="9865e2bc-2a6e-4a54-9df4-73a65551e237" type="Normal" published="True">
+    <name>CheckIn Document</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>21</cameray>
+      <zoom version="2">2.1875</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="cb14d156-fc84-4ab0-82dd-517caf8180ef" type="Normal" published="True">
+    <name>List Items in Folder</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="4554e91b-e79b-4a4f-b9b6-682eaf93b7c1" type="Normal" published="True">
+    <name>Move File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="b42f0bbd-ed9e-4f8a-b393-d9c5be3ae3f4" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>4bda566e-66de-4906-b8cb-c1843613c0b3</onsuccess>
+  </stage>
+  <stage stageid="4bda566e-66de-4906-b8cb-c1843613c0b3" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="a1961d46-0c36-4b24-b5d5-84964555c1d6" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="180" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+      <reference>RPA_Gliwice_SharePointMetabot.dll</reference>
+      <reference>CsvHelper.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+      <import>RPAGliwice_Extensions</import>
+    </imports>
+    <language>csharp</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="2302885a-4213-4021-8392-d7e9a238db75" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>9e68876a-980b-4abb-8aef-d3211b52d59e</subsheetid>
+    <display x="-180" y="-105" w="180" h="90" />
+  </stage>
+  <stage stageid="74cd9194-5de2-4f24-8451-eeb6a4697bbc" name="Start" type="Start">
+    <subsheetid>9e68876a-980b-4abb-8aef-d3211b52d59e</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>2bc5b367-d257-4e1e-8de6-8e81428bc7ee</onsuccess>
+  </stage>
+  <stage stageid="2bc5b367-d257-4e1e-8de6-8e81428bc7ee" name="End" type="End">
+    <subsheetid>9e68876a-980b-4abb-8aef-d3211b52d59e</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="d0c2246a-96e0-430e-9647-00f978c28acc" name="Note" type="Note">
+    <subsheetid>9e68876a-980b-4abb-8aef-d3211b52d59e</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="ddd92128-1634-4465-a94c-70fce5e15f72" name="Note" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-195" y="45" w="180" h="210" />
+  </stage>
+  <stage stageid="e98a0efe-e179-4b53-b605-db092d2948ef" name="Set Credentials" type="SubSheetInfo">
+    <subsheetid>5672ac7a-ea1f-4dae-b72a-72cbe3690075</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="b1661efd-0746-4128-aeef-e95f4c2f204f" name="Start" type="Start">
+    <subsheetid>5672ac7a-ea1f-4dae-b72a-72cbe3690075</subsheetid>
+    <loginhibit />
+    <display x="15" y="-60" />
+    <inputs>
+      <input type="text" name="SharePoint - Username" narrative="Ex.: MZPFCB42@inetpsa.com" stage="SharePoint - Username" />
+      <input type="password" name="SharePoint - Password" stage="SharePoint - Password" />
+    </inputs>
+    <onsuccess>8c2938b2-cf8f-4a0d-b13f-a47dff4f5758</onsuccess>
+  </stage>
+  <stage stageid="8c2938b2-cf8f-4a0d-b13f-a47dff4f5758" name="End" type="End">
+    <subsheetid>5672ac7a-ea1f-4dae-b72a-72cbe3690075</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="8cf36669-c17b-4f4c-a3f1-4e8023679ba0" name="SharePoint - Username" type="Data">
+    <subsheetid>5672ac7a-ea1f-4dae-b72a-72cbe3690075</subsheetid>
+    <loginhibit />
+    <display x="-195" y="-15" w="150" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="45141b7e-efae-4f5f-83c7-7fc28d44e6f9" name="SharePoint - Password" type="Data">
+    <subsheetid>5672ac7a-ea1f-4dae-b72a-72cbe3690075</subsheetid>
+    <loginhibit />
+    <narrative>7yCLesgz</narrative>
+    <display x="-195" y="15" w="150" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="45960913-a5c7-44a4-925d-be0a39ba9d58" name="Upload File" type="SubSheetInfo">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="f3014ad2-9339-4268-a316-bd08b470f00f" name="Start" type="Start">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint Folder Path" stage="SharePoint Folder Path" />
+      <input type="text" name="Local File Path" stage="Local File Path" />
+    </inputs>
+    <onsuccess>dc442158-898c-4206-a77d-4c26146d69b5</onsuccess>
+  </stage>
+  <stage stageid="7e93f657-f177-4ef9-91fe-6348ce842b7f" name="End" type="End">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <loginhibit />
+    <display x="0" y="45" />
+    <outputs>
+      <output type="text" name="Output" stage="Output" />
+    </outputs>
+  </stage>
+  <stage stageid="e301f25a-c5ec-4832-904c-81f953a9132d" name="Local File Path" type="Data">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="00a91c45-31e9-487a-b70d-62c68717f9d6" name="SharePoint Folder Path" type="Data">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="dc442158-898c-4206-a77d-4c26146d69b5" name="UploadFile" type="Code">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <loginhibit />
+    <display x="0" y="0" />
+    <inputs>
+      <input type="text" name="sharePointFolderPath" expr="[SharePoint Folder Path]" />
+      <input type="text" name="localFilePath" expr="[Local File Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="output" stage="Output" />
+    </outputs>
+    <onsuccess>7e93f657-f177-4ef9-91fe-6348ce842b7f</onsuccess>
+    <code><![CDATA[SharePointAutomations.UploadFile(sharePointFolderPath, localFilePath, 0, username, password);
+output = "OK";]]></code>
+  </stage>
+  <stage stageid="61b5b8d3-dbdf-45b2-ba88-8cf6198ceef2" name="Note1" type="Note">
+    <subsheetid>5672ac7a-ea1f-4dae-b72a-72cbe3690075</subsheetid>
+    <loginhibit />
+    <narrative>MZPFCB42@inetpsa.com</narrative>
+    <display x="-195" y="75" w="120" h="30" />
+  </stage>
+  <stage stageid="993c4dc3-53cd-441d-85eb-6a000d2e80ff" name="Output" type="Data">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <display x="-195" y="135" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="133ccb8c-397d-4701-a217-440aad363074" name="Input Parameters" type="Block">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="a1431410-5bd3-4382-89f9-496fa009bdbe" name="Local Variables" type="Block">
+    <subsheetid>fb626da8-af9c-4552-9f28-3b8168f621b6</subsheetid>
+    <loginhibit />
+    <display x="-270" y="90" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FFCC99" />
+  </stage>
+  <stage stageid="db1ddc8f-4bb1-4340-a9ff-09962d7542b5" name="Download File by Name" type="SubSheetInfo">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="071ce1bf-d862-4c79-917d-9c18790384ea" name="Start" type="Start">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint Folder Path" stage="SharePoint Folder Path" />
+      <input type="text" name="Local Folder" stage="Local Folder" />
+      <input type="text" name="Name Contains" stage="Name Contains" />
+    </inputs>
+    <onsuccess>12902709-75c1-4cf4-add2-7fe77b45a26f</onsuccess>
+  </stage>
+  <stage stageid="e9d5491a-7a46-4bc6-bd5e-4de97a49c9f9" name="End" type="End">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <loginhibit />
+    <display x="0" y="45" />
+    <outputs>
+      <output type="text" name="Output" stage="Output" />
+    </outputs>
+  </stage>
+  <stage stageid="a59f15f3-3e44-4e88-9cc9-70947a6a9a22" name="Name Contains" type="Data">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <display x="-195" y="60" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9d4a4856-34df-4141-a028-a6ec7bbdde09" name="SharePoint Folder Path" type="Data">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="12902709-75c1-4cf4-add2-7fe77b45a26f" name="DownloadFileByName" type="Code">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <loginhibit />
+    <display x="0" y="0" />
+    <inputs>
+      <input type="text" name="sharePointFolderPath" expr="[SharePoint Folder Path]" />
+      <input type="text" name="localFolder" expr="[Local Folder]" />
+      <input type="text" name="nameContains" expr="[Name Contains]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="output" stage="Output" />
+    </outputs>
+    <onsuccess>e9d5491a-7a46-4bc6-bd5e-4de97a49c9f9</onsuccess>
+    <code><![CDATA[SharePointAutomations.DownloadDocumentsFromDocumentLibrary(sharePointFolderPath, localFolder, nameContains, "", "", 0, username, password);
+output = "OK";]]></code>
+  </stage>
+  <stage stageid="9dc11d00-6c62-43dd-b613-c3b8456f13b0" name="Output" type="Data">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <display x="-195" y="195" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5e1a470a-b759-4d6c-bf67-91a7426476ea" name="Input Parameters" type="Block">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="135" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="f2008381-d7c2-4c67-a7a8-7e7e62184d9d" name="Local Variables" type="Block">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <loginhibit />
+    <display x="-270" y="150" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FFCC99" />
+  </stage>
+  <stage stageid="16b8ebac-f581-4f3b-a343-cecfbb6b7e44" name="Local Folder" type="Data">
+    <subsheetid>2007d99b-036a-4fb0-9ea4-1cedded83f0f</subsheetid>
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b00e914a-bb55-49ae-8006-9392f7fd5d6a" name="Check File Exists" type="SubSheetInfo">
+    <subsheetid>fec465f9-dcfb-4370-9d0e-79f0f4e971ee</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="24c732d7-42c4-45e9-9fbc-bb18a839da89" name="Start" type="Start">
+    <subsheetid>fec465f9-dcfb-4370-9d0e-79f0f4e971ee</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint File Path" stage="SharePoint File Path" />
+    </inputs>
+    <onsuccess>793382eb-b3ff-4a6d-a5b6-5f473b8e044c</onsuccess>
+  </stage>
+  <stage stageid="cb521b70-8411-43fb-b721-e85775595233" name="End" type="End">
+    <subsheetid>fec465f9-dcfb-4370-9d0e-79f0f4e971ee</subsheetid>
+    <loginhibit />
+    <display x="0" y="45" />
+    <outputs>
+      <output type="flag" name="File Exists" stage="File Exists" />
+    </outputs>
+  </stage>
+  <stage stageid="5e9827cc-9639-4cc0-982f-47987c213642" name="SharePoint File Path" type="Data">
+    <subsheetid>fec465f9-dcfb-4370-9d0e-79f0f4e971ee</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="793382eb-b3ff-4a6d-a5b6-5f473b8e044c" name="CheckFileExists" type="Code">
+    <subsheetid>fec465f9-dcfb-4370-9d0e-79f0f4e971ee</subsheetid>
+    <loginhibit />
+    <display x="0" y="0" />
+    <inputs>
+      <input type="text" name="sharePointFilePath" expr="[SharePoint File Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="fileExists" stage="File Exists" />
+    </outputs>
+    <onsuccess>cb521b70-8411-43fb-b721-e85775595233</onsuccess>
+    <code><![CDATA[fileExists = SharePointAutomations.FileExists(sharePointFilePath, 0, username, password);]]></code>
+  </stage>
+  <stage stageid="267eae38-dc02-457f-b0eb-1053a1ae7210" name="Input Parameters" type="Block">
+    <subsheetid>fec465f9-dcfb-4370-9d0e-79f0f4e971ee</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="00f2511c-a69f-4f3a-b381-06cd095d5cf8" name="Local Variables" type="Block">
+    <subsheetid>fec465f9-dcfb-4370-9d0e-79f0f4e971ee</subsheetid>
+    <loginhibit />
+    <display x="-270" y="90" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FFCC99" />
+  </stage>
+  <stage stageid="7a6d4c1e-c69a-4b7c-9d2d-5ff496b4c6a4" name="File Exists" type="Data">
+    <subsheetid>fec465f9-dcfb-4370-9d0e-79f0f4e971ee</subsheetid>
+    <display x="-195" y="135" w="150" h="30" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d8f3c78a-607f-465c-bc6e-9ad11e3e1013" name="Delete File" type="SubSheetInfo">
+    <subsheetid>c951b7a4-f215-41a1-a7a6-abb6551a0c31</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="d3a7d400-cb96-4ac7-85b0-6ea79b12627b" name="Start" type="Start">
+    <subsheetid>c951b7a4-f215-41a1-a7a6-abb6551a0c31</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint File Path" stage="SharePoint File Path" />
+    </inputs>
+    <onsuccess>ff4a6b75-90b1-44a7-828b-3b1f5339cfac</onsuccess>
+  </stage>
+  <stage stageid="1cd523d7-983f-4caf-a282-5dfbde7dad79" name="End" type="End">
+    <subsheetid>c951b7a4-f215-41a1-a7a6-abb6551a0c31</subsheetid>
+    <loginhibit />
+    <display x="0" y="45" />
+    <outputs>
+      <output type="text" name="Output" stage="Output" />
+    </outputs>
+  </stage>
+  <stage stageid="08a2a1a8-87ab-496b-9d7f-b79e6dd4a804" name="SharePoint File Path" type="Data">
+    <subsheetid>c951b7a4-f215-41a1-a7a6-abb6551a0c31</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ff4a6b75-90b1-44a7-828b-3b1f5339cfac" name="DeleteFile" type="Code">
+    <subsheetid>c951b7a4-f215-41a1-a7a6-abb6551a0c31</subsheetid>
+    <loginhibit />
+    <display x="0" y="0" />
+    <inputs>
+      <input type="text" name="sharePointFilePath" expr="[SharePoint File Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="output" stage="Output" />
+    </outputs>
+    <onsuccess>1cd523d7-983f-4caf-a282-5dfbde7dad79</onsuccess>
+    <code><![CDATA[SharePointAutomations.DeleteFile(sharePointFilePath, 0, username, password);
+output = "OK";]]></code>
+  </stage>
+  <stage stageid="3b264b17-e4ff-40a5-a696-3672062312b1" name="Input Parameters" type="Block">
+    <subsheetid>c951b7a4-f215-41a1-a7a6-abb6551a0c31</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="97f044f8-24d9-46bf-8b29-8ca55ee5219c" name="Local Variables" type="Block">
+    <subsheetid>c951b7a4-f215-41a1-a7a6-abb6551a0c31</subsheetid>
+    <loginhibit />
+    <display x="-270" y="90" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FFCC99" />
+  </stage>
+  <stage stageid="9b73f3c4-c6a1-4e0b-be4c-7581c427e355" name="Output" type="Data">
+    <subsheetid>c951b7a4-f215-41a1-a7a6-abb6551a0c31</subsheetid>
+    <display x="-195" y="135" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d431cd76-6aa9-4199-ae90-3d02b2a34647" name="Download List Items As CSV File" type="SubSheetInfo">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="00a10a76-a1bc-45a5-aa44-b98406b903d1" name="Start" type="Start">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint Site URL" stage="SharePoint Site URL" />
+      <input type="text" name="List Title" stage="List Title" />
+      <input type="text" name="Query String View" stage="Query String View" />
+      <input type="text" name="List Fields" stage="List Fields" />
+      <input type="text" name="Result CSV File Path" stage="Result CSV File Path" />
+    </inputs>
+    <onsuccess>71fb899f-e39e-4cac-b0ae-47fd859ef6d4</onsuccess>
+  </stage>
+  <stage stageid="075fff7a-c07a-4c3c-84f5-1f01b75a9e3d" name="End" type="End">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="0" y="45" />
+    <outputs>
+      <output type="text" name="Output" stage="Output" />
+    </outputs>
+  </stage>
+  <stage stageid="7ce4c520-9cbc-4e61-9721-d82b5eb36b05" name="SharePoint Site URL" type="Data">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="71fb899f-e39e-4cac-b0ae-47fd859ef6d4" name="DownloadListItemsAsCsvFile" type="Code">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="0" y="0" />
+    <inputs>
+      <input type="text" name="siteUrl" expr="[SharePoint Site URL]" />
+      <input type="text" name="queryStringView" expr="[Query String View]" />
+      <input type="text" name="listTitle" expr="[List Title]" />
+      <input type="text" name="listFields" expr="[List Fields]" />
+      <input type="text" name="resultCsvFilePath" expr="[Result CSV File Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="output" stage="Output" />
+    </outputs>
+    <onsuccess>075fff7a-c07a-4c3c-84f5-1f01b75a9e3d</onsuccess>
+    <code><![CDATA[
+/*
+siteUrl = "https://shiftup.sharepoint.com/sites/WorkflowPaymentswithoutRDA";
+listTitle = "PAY_Request";
+listFields = "str_requestHistory";
+queryStringView = "<View><Query><Where><And><And><Eq><FieldRef Name=\"id_status\" /><Value Type=\"Lookup\">3</Value></Eq><Geq><FieldRef Name=\"Modified\" /><Value Type=\"DateTime\"><Today OffsetDays=\"-7\" /></Value></Geq></And><Geq><FieldRef Name=\"Modified\" /><Value Type=\"DateTime\"><Today OffsetDays=\"-7\" /></Value></Geq></And></Where></Query></View>";
+resultCsvFilePath = "C:/temp/Lista_CSV.csv";
+username = "MZPFCB42@inetpsa.com";
+password = "7yCLesgz";
+*/
+SharePointAutomations.DownloadListItemsAsCsvFile(siteUrl, listTitle, listFields, queryStringView, resultCsvFilePath, false, username, password);
+output = "OK";]]></code>
+  </stage>
+  <stage stageid="cde7252c-4130-4082-8998-7298ce2051a4" name="Input Parameters" type="Block">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="210" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="0dccf94e-af8e-401d-b3b6-41ba5dd45854" name="Local Variables" type="Block">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="-270" y="180" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FFCC99" />
+  </stage>
+  <stage stageid="7ad406d4-a045-4a17-a147-c31c6b18c87f" name="Output" type="Data">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <display x="-195" y="225" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5ed1739e-1c91-48e8-87c8-97ef1b97e72d" name="List Title" type="Data">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="08b1fb9c-4066-4a02-be39-2571b2109597" name="List Fields" type="Data">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="-195" y="60" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b39da16c-3362-4e9b-840b-e004b4c13740" name="Query String View" type="Data">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="-195" y="90" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f708d6d5-cfc2-4e55-8b68-a7c3c7081a27" name="Result CSV File Path" type="Data">
+    <subsheetid>58e21268-7a6d-4f30-b16f-3a062102b28e</subsheetid>
+    <loginhibit />
+    <display x="-195" y="120" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1ca7989c-a6a2-408d-81f5-1fa7affa69d6" name="Create List Item With Attachments" type="SubSheetInfo">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="2501dd97-8a98-4c6f-b00c-5b52e35ad9f2" name="Start" type="Start">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint Site URL" stage="SharePoint Site URL" />
+      <input type="text" name="List Title" stage="List Title" />
+      <input type="text" name="List Fields" stage="List Fields" />
+      <input type="text" name="Attachment Paths" stage="Attachment Paths" />
+    </inputs>
+    <onsuccess>d432b17a-8d8e-4d5c-8083-8a62376e2e02</onsuccess>
+  </stage>
+  <stage stageid="f97abe98-7240-449b-998a-155b1c4e736a" name="End" type="End">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <loginhibit />
+    <display x="0" y="75" />
+    <outputs>
+      <output type="text" name="Output" stage="Output" />
+    </outputs>
+  </stage>
+  <stage stageid="9f795559-630f-4549-ba04-ca4b85a445c8" name="List Fields" type="Data">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <display x="-195" y="60" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="27d6c224-075b-44d1-8198-102ec6e46fba" name="SharePoint Site URL" type="Data">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d432b17a-8d8e-4d5c-8083-8a62376e2e02" name="CreateListItemWithAttachments" type="Code">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <loginhibit />
+    <display x="0" y="15" />
+    <inputs>
+      <input type="text" name="siteUrl" expr="[SharePoint Site URL]" />
+      <input type="text" name="listTitle" expr="[List Title]" />
+      <input type="text" name="listFields" expr="[List Fields]" />
+      <input type="text" name="attachmentPaths" expr="[Attachment Paths]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="output" stage="Output" />
+    </outputs>
+    <onsuccess>f97abe98-7240-449b-998a-155b1c4e736a</onsuccess>
+    <code><![CDATA[SharePointAutomations.CreateListItemWithAttachments(siteUrl, listTitle, listFields, attachmentPaths, username, password);
+output = "OK";]]></code>
+  </stage>
+  <stage stageid="8ba5cf6b-2379-4388-b425-6f770d066d21" name="Output" type="Data">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <display x="-195" y="195" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cf1cb5da-2791-48c9-8377-ef1921ba7c38" name="Input Parameters" type="Block">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="165" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="9d57aa75-9113-43e6-ac0c-bfa413cdf075" name="Local Variables" type="Block">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <loginhibit />
+    <display x="-270" y="150" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FFCC99" />
+  </stage>
+  <stage stageid="c4cbfcb8-3909-47a2-95ba-ec72b3a49dad" name="List Title" type="Data">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="03d045a6-c4ce-4768-8f9f-8a535bfcd752" name="Attachment Paths" type="Data">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <display x="-195" y="90" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="401a5453-2f2c-4222-ab5d-2118bd476414" name="Sample" type="MultipleCalculation">
+    <subsheetid>3370a323-48a3-4a37-a1f2-3e1131b73103</subsheetid>
+    <loginhibit />
+    <display x="105" y="15" />
+    <onsuccess>d432b17a-8d8e-4d5c-8083-8a62376e2e02</onsuccess>
+    <steps>
+      <calculation expression="&quot;https://shiftup.sharepoint.com/sites/WorkflowPaymentswithoutRDA&quot;" stage="SharePoint Site URL" />
+      <calculation expression="&quot;Status,2,Title,Ação Concluída com suçççççççççesssso&quot;" stage="List Fields" />
+      <calculation expression="&quot;PAY_RPA&quot;" stage="List Title" />
+      <calculation expression="&quot;MZPFCB42@inetpsa.com&quot;" stage="SharePoint - Username" />
+      <calculation expression="&quot;7yCLesgz&quot;" stage="SharePoint - Password" />
+      <calculation expression="&quot;C:\Users\f83932c\Documents\Automate.config&quot;" stage="Attachment Paths" />
+    </steps>
+  </stage>
+  <stage stageid="5d26ac50-9c21-434c-a77c-4f89e5a3888f" name="Ensure Folder Structure Exists" type="SubSheetInfo">
+    <subsheetid>24bb38d5-f194-49d9-9fee-354af39081fc</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="fc150e30-e8be-4ff8-aee9-c547917d8542" name="Start" type="Start">
+    <subsheetid>24bb38d5-f194-49d9-9fee-354af39081fc</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint Folder Path" stage="SharePoint Folder Path" />
+    </inputs>
+    <onsuccess>f3af058c-a79d-42cd-8c61-02ea22fd4ea5</onsuccess>
+  </stage>
+  <stage stageid="0f3f53b9-3b59-4c10-abdb-fa22b4936f42" name="End" type="End">
+    <subsheetid>24bb38d5-f194-49d9-9fee-354af39081fc</subsheetid>
+    <loginhibit />
+    <display x="0" y="45" />
+  </stage>
+  <stage stageid="1f9b2e85-74f7-4fc1-8cb3-b4c60801a063" name="SharePoint Folder Path" type="Data">
+    <subsheetid>24bb38d5-f194-49d9-9fee-354af39081fc</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f3af058c-a79d-42cd-8c61-02ea22fd4ea5" name="EnsureFolderStructureExists" type="Code">
+    <subsheetid>24bb38d5-f194-49d9-9fee-354af39081fc</subsheetid>
+    <loginhibit />
+    <display x="0" y="0" />
+    <inputs>
+      <input type="text" name="sharePointFolderPath" expr="[SharePoint Folder Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <onsuccess>0f3f53b9-3b59-4c10-abdb-fa22b4936f42</onsuccess>
+    <code><![CDATA[SharePointAutomations.EnsureFolderStructureExists(sharePointFolderPath, 0, username, password);]]></code>
+  </stage>
+  <stage stageid="0adb4a78-9286-4051-8a28-ad87aa4312cc" name="Input Parameters" type="Block">
+    <subsheetid>24bb38d5-f194-49d9-9fee-354af39081fc</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="47bc4da7-9f1d-4845-804d-daf6bfebdb79" name="Note2" type="Note">
+    <subsheetid>24bb38d5-f194-49d9-9fee-354af39081fc</subsheetid>
+    <loginhibit />
+    <narrative>https://shiftup.sharepoint.com/sites/GSD_LBRAFCADAFFinanceRPAPROJECT/Shared Documents/BKP/FÁBIO</narrative>
+    <display x="-195" y="105" w="150" h="60" />
+  </stage>
+  <stage stageid="8d334eb6-a815-4dac-b575-12fcb03343d3" name="CheckOut Document" type="SubSheetInfo">
+    <subsheetid>b2e8e0d3-5910-48b6-b21d-7ef5a34b9b95</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="4b35ba1b-b510-4ce0-b88e-01f970c76672" name="Start" type="Start">
+    <subsheetid>b2e8e0d3-5910-48b6-b21d-7ef5a34b9b95</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint File Path" stage="SharePoint File Path" />
+    </inputs>
+    <onsuccess>8f0e6fde-6db7-4d72-a72b-f19ff63768c5</onsuccess>
+  </stage>
+  <stage stageid="2d13d97a-b439-489a-8803-35caad109717" name="End" type="End">
+    <subsheetid>b2e8e0d3-5910-48b6-b21d-7ef5a34b9b95</subsheetid>
+    <loginhibit />
+    <display x="0" y="75" />
+  </stage>
+  <stage stageid="aad73c9e-1861-4431-a419-ea232cde5e21" name="SharePoint File Path" type="Data">
+    <subsheetid>b2e8e0d3-5910-48b6-b21d-7ef5a34b9b95</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8f0e6fde-6db7-4d72-a72b-f19ff63768c5" name="CheckOut" type="Code">
+    <subsheetid>b2e8e0d3-5910-48b6-b21d-7ef5a34b9b95</subsheetid>
+    <loginhibit />
+    <display x="0" y="15" />
+    <inputs>
+      <input type="text" name="sharePointFilePath" expr="[SharePoint File Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <onsuccess>2d13d97a-b439-489a-8803-35caad109717</onsuccess>
+    <code><![CDATA[SharePointAutomations.CheckOutDocument(sharePointFilePath, 0, username, password);]]></code>
+  </stage>
+  <stage stageid="1c188a3f-fb24-4ccc-8e34-8e066dea9080" name="Input Parameters" type="Block">
+    <subsheetid>b2e8e0d3-5910-48b6-b21d-7ef5a34b9b95</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="33ca2db5-bd13-41cf-b1c1-7dcbcb1b67c4" name="CheckIn Document" type="SubSheetInfo">
+    <subsheetid>9865e2bc-2a6e-4a54-9df4-73a65551e237</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="acb06804-f904-4af6-82d6-6550c79819f6" name="Start" type="Start">
+    <subsheetid>9865e2bc-2a6e-4a54-9df4-73a65551e237</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint File Path" stage="SharePoint File Path" />
+      <input type="text" name="Comment" stage="Comment" />
+    </inputs>
+    <onsuccess>0d48e900-169b-4e64-a2d0-e2bd8ffb1ed8</onsuccess>
+  </stage>
+  <stage stageid="a8c81c20-4dcd-4183-aad2-8c29774be6e0" name="End" type="End">
+    <subsheetid>9865e2bc-2a6e-4a54-9df4-73a65551e237</subsheetid>
+    <loginhibit />
+    <display x="0" y="75" />
+  </stage>
+  <stage stageid="f32deaf9-871b-4ba9-a435-a3c16f17fe48" name="SharePoint File Path" type="Data">
+    <subsheetid>9865e2bc-2a6e-4a54-9df4-73a65551e237</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0d48e900-169b-4e64-a2d0-e2bd8ffb1ed8" name="CheckIn" type="Code">
+    <subsheetid>9865e2bc-2a6e-4a54-9df4-73a65551e237</subsheetid>
+    <loginhibit />
+    <display x="0" y="15" />
+    <inputs>
+      <input type="text" name="sharePointFilePath" expr="[SharePoint File Path]" />
+      <input type="text" name="comment" expr="[Comment]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <onsuccess>a8c81c20-4dcd-4183-aad2-8c29774be6e0</onsuccess>
+    <code><![CDATA[SharePointAutomations.CheckInDocument(sharePointFilePath, comment, 0, username, password);]]></code>
+  </stage>
+  <stage stageid="0f6e541d-a16d-4f26-98e5-5c5d9d88d86b" name="Input Parameters" type="Block">
+    <subsheetid>9865e2bc-2a6e-4a54-9df4-73a65551e237</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="135" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="d7445ad0-4537-47d0-b66b-ef51433abd2a" name="Comment" type="Data">
+    <subsheetid>9865e2bc-2a6e-4a54-9df4-73a65551e237</subsheetid>
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a48d2891-ef40-4d46-b324-fbdb7993fe1f" name="List Items in Folder" type="SubSheetInfo">
+    <subsheetid>cb14d156-fc84-4ab0-82dd-517caf8180ef</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="36a63502-df8f-450a-a327-510ef4fb9645" name="Start" type="Start">
+    <subsheetid>cb14d156-fc84-4ab0-82dd-517caf8180ef</subsheetid>
+    <loginhibit />
+    <display x="-15" y="-90" />
+    <inputs>
+      <input type="text" name="SharePoint Folder Path" stage="SharePoint Folder Path" />
+    </inputs>
+    <onsuccess>2f326430-0b8b-43e1-9bfb-5f1eb6bdffdb</onsuccess>
+  </stage>
+  <stage stageid="6f3672c0-cf61-49e9-975c-8cfd3ea52f84" name="End" type="End">
+    <subsheetid>cb14d156-fc84-4ab0-82dd-517caf8180ef</subsheetid>
+    <loginhibit />
+    <display x="-15" y="15" />
+    <outputs>
+      <output type="collection" name="Output Items" stage="Output" />
+    </outputs>
+  </stage>
+  <stage stageid="f168fc2f-feb3-48f1-aba1-3e5326600d67" name="SharePoint Folder Path" type="Data">
+    <subsheetid>cb14d156-fc84-4ab0-82dd-517caf8180ef</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2f326430-0b8b-43e1-9bfb-5f1eb6bdffdb" name="ListItemsInFolder" type="Code">
+    <subsheetid>cb14d156-fc84-4ab0-82dd-517caf8180ef</subsheetid>
+    <loginhibit />
+    <display x="-15" y="-30" />
+    <inputs>
+      <input type="text" name="sharePointFolderPath" expr="[SharePoint Folder Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="output" stage="Output" />
+    </outputs>
+    <onsuccess>6f3672c0-cf61-49e9-975c-8cfd3ea52f84</onsuccess>
+    <code><![CDATA[output = SharePointAutomations.GetListItems(sharePointFolderPath, 0, username, password);]]></code>
+  </stage>
+  <stage stageid="8a975590-e4c1-4804-acd9-a2c14085a8a4" name="Input Parameters" type="Block">
+    <subsheetid>cb14d156-fc84-4ab0-82dd-517caf8180ef</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="6dcc8dab-2fce-4962-b875-9a74560f6025" name="Output" type="Collection">
+    <subsheetid>cb14d156-fc84-4ab0-82dd-517caf8180ef</subsheetid>
+    <display x="-195" y="105" w="150" h="30" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c7d35998-2008-4c57-9cb8-728d0ffa0c71" name="Local Variables" type="Block">
+    <subsheetid>cb14d156-fc84-4ab0-82dd-517caf8180ef</subsheetid>
+    <loginhibit />
+    <display x="-270" y="60" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FFCC99" />
+  </stage>
+  <stage stageid="f4fa4462-7932-409c-8b05-d8dfb245c705" name="Upload All Files in Folder" type="SubSheetInfo">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="6143aa6d-445e-4522-8cc3-e40a94cec8af" name="Start" type="Start">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <loginhibit />
+    <display x="0" y="-45" />
+    <inputs>
+      <input type="text" name="SharePoint Folder Path" stage="SharePoint Folder Path" />
+      <input type="text" name="Local File Path" stage="Local Folder Path" />
+    </inputs>
+    <onsuccess>2c6e5045-6f78-4a12-8eb5-f481450cff45</onsuccess>
+  </stage>
+  <stage stageid="443e1b57-514a-4e5c-84dd-e067bd521ae8" name="End" type="End">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <loginhibit />
+    <display x="0" y="45" />
+    <outputs>
+      <output type="text" name="Output" stage="Output" />
+    </outputs>
+  </stage>
+  <stage stageid="2afd82f6-c53b-409c-855f-69cf9773b14e" name="SharePoint Folder Path" type="Data">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2c6e5045-6f78-4a12-8eb5-f481450cff45" name="UploadAllFiles" type="Code">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <loginhibit />
+    <display x="0" y="0" />
+    <inputs>
+      <input type="text" name="sharePointFolderPath" expr="[SharePoint Folder Path]" />
+      <input type="text" name="localFolderPath" expr="[Local Folder Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="output" stage="Output" />
+    </outputs>
+    <onsuccess>443e1b57-514a-4e5c-84dd-e067bd521ae8</onsuccess>
+    <code><![CDATA[SharePointAutomations.UploadAllFilesInFolder(sharePointFolderPath, localFolderPath, 0, username, password);
+output = "OK";]]></code>
+  </stage>
+  <stage stageid="5dffdeee-5586-499e-a0ed-74382a33ede8" name="Output" type="Data">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <display x="-195" y="135" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0b1fea17-0902-461d-94cb-81b068fcecec" name="Input Parameters" type="Block">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="8a2cef49-5944-4d08-aab0-0f3924e24243" name="Local Variables" type="Block">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <loginhibit />
+    <display x="-270" y="90" w="150" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FFCC99" />
+  </stage>
+  <stage stageid="cae8db27-ed90-4116-b4ab-5d45c6ab3072" name="Local Folder Path" type="Data">
+    <subsheetid>bae8facc-f748-4799-847e-95c362b94dc9</subsheetid>
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="eeb0b8c2-2715-49e3-9aab-15d5b036f2e0" name="Move File" type="SubSheetInfo">
+    <subsheetid>4554e91b-e79b-4a4f-b9b6-682eaf93b7c1</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="3cf5d003-3102-42ec-9ddd-c83686ebda99" name="Start" type="Start">
+    <subsheetid>4554e91b-e79b-4a4f-b9b6-682eaf93b7c1</subsheetid>
+    <loginhibit />
+    <display x="-15" y="-90" />
+    <inputs>
+      <input type="text" name="SharePoint Souce File Path" stage="SharePoint Souce File Path" />
+      <input type="text" name="SharePoint Dest Folder Path" stage="SharePoint Dest Folder Path" />
+    </inputs>
+    <onsuccess>c05b6fd5-0335-4d60-8ada-c022b108c163</onsuccess>
+  </stage>
+  <stage stageid="12a511b7-bbdb-4ba8-8f6d-2b2ab3c4ec98" name="End" type="End">
+    <subsheetid>4554e91b-e79b-4a4f-b9b6-682eaf93b7c1</subsheetid>
+    <loginhibit />
+    <display x="-15" y="15" />
+  </stage>
+  <stage stageid="cab4eafe-7853-4ca8-81c5-a7b83df31f78" name="SharePoint Souce File Path" type="Data">
+    <subsheetid>4554e91b-e79b-4a4f-b9b6-682eaf93b7c1</subsheetid>
+    <display x="-195" y="-15" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c05b6fd5-0335-4d60-8ada-c022b108c163" name="MoveFile" type="Code">
+    <subsheetid>4554e91b-e79b-4a4f-b9b6-682eaf93b7c1</subsheetid>
+    <loginhibit />
+    <display x="-15" y="-30" />
+    <inputs>
+      <input type="text" name="sharePointSouceFilePath" expr="[SharePoint Souce File Path]" />
+      <input type="text" name="sharePointDestFolderPath" expr="[SharePoint Dest Folder Path]" />
+      <input type="text" name="username" expr="[SharePoint - Username]" />
+      <input type="password" name="password" expr="[SharePoint - Password]" />
+    </inputs>
+    <onsuccess>12a511b7-bbdb-4ba8-8f6d-2b2ab3c4ec98</onsuccess>
+    <code><![CDATA[SharePointAutomations.MoveFile(sharePointSouceFilePath, sharePointDestFolderPath, 0, username, password);]]></code>
+  </stage>
+  <stage stageid="8f91ebee-1ba4-4e3c-bd66-234314923ca7" name="Input Parameters" type="Block">
+    <subsheetid>4554e91b-e79b-4a4f-b9b6-682eaf93b7c1</subsheetid>
+    <loginhibit />
+    <display x="-270" y="-45" w="150" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="CCFFCC" />
+  </stage>
+  <stage stageid="0294f041-3a73-4c3e-afd0-5db94fb63540" name="SharePoint Dest Folder Path" type="Data">
+    <subsheetid>4554e91b-e79b-4a4f-b9b6-682eaf93b7c1</subsheetid>
+    <display x="-195" y="15" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>
